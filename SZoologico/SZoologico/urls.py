@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from claseZoologico.views import primera_vista,mi_vista
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('prueba/',primera_vista),
+    path('mi-formulario/', mi_vista, name='mi_formulario'),  # Para vistas basadas en función
 ]
+

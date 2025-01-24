@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Zoologico</title>
+    <style>
+        body{
+            background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUPEhIWFhUWGBUVEhUVFRUVFxUVGBYXFxoXFxUYHSggGholHRcXITEhJSkrLi4uFyAzODMtNygtLisBCgoKDg0OGhAQGi0dHSYtLS0tLS8tLS0tLS0rLS0tLS0tKy0tLS0rLS0tKy0tLS0tLS0tLS0tLS0tLS0tLSstLf/AABEIAKcBLQMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAAAgMEBQYHAQj/xABDEAABBAADBgQCCAMGBAcAAAABAAIDEQQSIQUGEzFBUSJhcZEHgRQjMkJSYqGxcsHwQ1OCktHxJDOi4RUWVIOytNL/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAQIDBAX/xAAgEQEBAQEAAwEBAQADAAAAAAAAARECAxIhMUEiBBMy/9oADAMBAAIRAxEAPwCiilSUuh6C12hiRFE+U/caXepA0HvS5BFOWvEl+IODr8wbW/8AxCxuSBsI5yO1/hbR/evZc7WXd+uXzdfcdow8oe1sjeTgHD0ItVFgtx8VxMK0E6xksPpzH6Eey2ClpL8dHN2aginSUpWQRTpMqCCLFbX3gjw8scLwfHqXdGAmgT+vssxlUaidSoIp5UyqUoIp5UpBBFOkpBBFOkyoIIp0lIIIp0lIILCb4wNfhnB0ojAINkEhxHJtDX/ZVd6trHDQZ2/bccrL5A0STXkAubY3a08wyyyOeLsA8gaqwPmqddfxj5PJJ8WSIiycoiIgIiICIiAiIgIiIO6NZamID3VQ4dYPe3a30SEuBHEfbYh59XV2H70Oq213WyTWhb9Y4S4pzWm2xDhj1H2v10+S11euN6leLGuK3brcPhvjQ2d2HcaEotv8bbNfMF3sF0n6OPNcKw8zmOa9ppzSHNPYg2F2PYW024qFszefJ7fwvHMfzHkQtOL/ABv4ev4yfAHmnAChlTKrt1TgBWm0MZBAGmZ4YHHK0m9TV9OXLmq+VY3b+xW4qLhOJbRDmuAuiNOXoSoVu58c53yxTJcY5zXh0fga1zTYy5QTRHmSunbI2hHiWl8bHht+Fz2ZQ4d266haTvNuU5tSYVuZoADmfesaZhfO+ZVxuhjsdG9uFkieYxYtwIMYHn+GyNPPRUmysebeevrfeGOycMdlCz3XuY91dunkHZeOACjnK9zlBHiDsqgAUL8h7L3iFBOkpR4h7JxPJBKlAh3kveJ5JxPJBAtd5Jld/VKfE8lgd8duvwsLXxhudzg0ZrOlEkgfIc+6biLcmtU+IW2s7/ogaPq3Bzn9c2U2AO1FaYrjaGMdNI6Z9Znm3UKF+it1lbrk6u3RERQqIiICIiAiIgIiICIiD6Hyrke+7reSHGYh2WScimB2tQxCyA1ou9SSea60ZKFmqGpJ0oea4xvftsYmb6sBsMdshaBQrq6umYj2AV+nR5fxgURFRzi3jcD7TAXGJzichq48QwHxRkaDiN6EG9eR66Ots+H+3Gwy/R5qMUrmkZgCGSisr9eXQX6Hopi3H66oYComI9lfZUyrTXXqwyKLaPLzHzGhWQdQFnkNT6LWNwto/SYZnnmJ5SL6NeQ8fuR8k1Ht9xmMqZVfcIdk4I7KVtWOVMqveCOycEdkRqyyplV9wh2XvCHZDVhlTKtW3v3wgjLIoSXvjlDpAwuYPBfgL61BdVgWKBVfcre/6W98cxYx5IMLACLbrYs83clX2V/7JuNiyr3Ir/KmVTq2rDImRXzqCjnHZNTqzyrVPiJjGxwNYY2vMjiGlwsMoauH5taHzW7Z/JW2PwEOIaI5ow9oNgO6HuCOSVXrbMcARbPvhu/PC+Sd0TWQ8TJEGVWXXLoOWg1J1srAY7Bvhdw5G5XU1xaeYDgHAEdDRGnmsnJZi3RERAiIgIiICIiAiIgIiIOk/EfeUNBwMTtT/wA9w6D+79T19upXNlmtq7ClYWva2RzZXEQl7SJZqrNIItXBpJsX+Ic1a7S2U/D02YFkh14ZGrW93dr0oa9eVUptW6tt2seiIoVERZDA7KfM0mHxvbZdEPt5fxMH3x3A1HatUHSvh9vR9IjGGld9dGPCTzkYOt9XDr3591uOvdcV2DsWUls5c+Jgfk4zRfAlFEcVvNrTfPlr5ELrGy8ViWkQYyKn3lbNH4oZD0sjWNx/MAD05gK8ro47+fVlvxj+Bg5XXq8cNvq/Q/pZWmfCnHZZ5IL0kZmGv3mH/wDLneyq/Ffa4fK3CMNiLxSV/eEaD5D/AOS0/Ym0Th548QNcjgSO7eTh8wSFFv1Trr/eu+i1XDV7g3skY2WM5mvAc09wdQq+RW1vqhlTKq+RMiChlWu76byNwUVijM+xE3t+d35R+p071tORYjae7GFxEzcRNHncwBrQSctAki2cjqTzUVXrc+OKbK3exeLdmiic4EkmR3hZZOpzHT2VHbGx58HJw5mlrvtNINgju1w/oL6HbHQoaDoB0WL3l2DHjIHQP0PON9WWP6EeXQjqFXGd8Xxpe42/AkrDYt1P5RynQP8AyvPR3Y9euvPoWRfPG1tmy4aV0Ercr2mj2I6EHqD3W27m7/Pw4EGJzSRcmuGr4/LX7TfLmOnZTKceTPldYdGCo8AealgcbFMwSxSNew8i038j2PkdVWJCtrbVvwAvWwhVi5RNoKGNnbFG+Z/2WNc91dmgk156Lgu8W2HYud2IcxrC4AU2+QFCyeZrqtx+JO8eIZO7CRyVGYwJG5Gkuzg2C5wJ5EcqXO1S1z+TrbgiIoZiIiCcobZy3lvw5qBrzAVzs3C5pYWuacsj2DtmBflNH3CYMlzTAxmZ8jow06WNSA0adXObrfQLq25cWFxOHhBiaJsIcpabzMk1t3mHG3a9QeymLc87WrbtbsxyYjGROaC6Bx4IcSGOILw0Pq7YaaT10VWf4aYglp40ZLiTI7xAN9BXi69ls+wow3auOaOrYXfOhZ9ytsyKZGvPEscJ3o2EcJK6MWWNyN4jhXEcWB7i0dhdda0vmsZ9CkzcPI7MG5i2jYblzXXbLquo777N4r8PI0B0hxYiY1x+rILRecVdXEOXQnyU94J8LgGvkkIlxkzHNLuRpwy3l1EcYoADmcta6lRil4+1zbFbEkjhbiHlgDqphd9ZRunGPmAau/MLGLMb1TMfiHSNlMpcAXuMXCAcGgU1pN5dNLANVz5rDqFK7JvT8R8PCCzC1NLqM/8AZs/xff8AQaea5FjcW+V7pZHFz3G3OPMlZ/auEwOGcQ2X6VJZ8LAWYdh7F+YukA7AjlzWuSvzEuoCzdAAAegHIInq2/qCIiKinDM5jg9ji1wNtc0kEHuCOSgvWnXlfl39kHT91N/8U9pbJhXYnLWZ8A+srkC+MA5vXRbzDtJ02HfI2CeF1HKJBHG/l9oZiQ0Du4dORXKd2MBs+d7S3FTYScHwgubV8vq5dO/I0fVZrf8A3hdBCdmsxDp5Hf8APlIYC1n934ANT1uzWnXRrXm2Ta51tCTNK91g25xsFxBsnUF3iPqdT11VuiIydm+E8pOFq7aCQAHWGuuyC06tcbB0tpFHQ2t3zeS4LuNvIcDiMxsxPpszQLNdHDzbfsSOq7vh5WyNbIxwc1wBa5psEHqCm46PHZZiebyTN5L3KmVR7NMeZvJM3kvcqZU9jHmbyTMvcq9DE9jGr777rtx0WlCZguJ3f8jj+E/ode98NxWHfG90b2lrmkhzToQR0X02Ij2Wr767jsxzTIwBmIaPC/o+vuv8ux5j00T2Zd8b9jiuyNrTYZ/FhkLHda1Dh2c06ELfdl/FTQDEYez1dE6v+h3+q57tDAyQSOhlaWPYac09D/MVrfW1bKWU6sfROxNsQYtnFgfmA0cCKc09nNPL9lkci+ft194pcDNxowHAjK9hJpzflyI6FdU2L8SMDMKlLoHdngub8ntH7gKdbc+SX9aT8VNpvfizhy0BsQblOUZnFzQ683OtarlotIX0TtDDQ43DyHCSxOlLHMjmBa4sJ/MAXN6+lrlUvw1xoxAwwaHNyhxnoiIaWRmPMg6Vz8qUaz75u60tFkNsbExGFcGYiJ0ZcCW3RBANGiCQf9lYxxlxDWgkkgAAWSTyAHUozRRXkmy5xKcMYn8VrspjDSXB1gVQ8yPcd1nNgbi4zEzGIxuia0uEkj2nK0tsUD942KockTlVdw2ipfE68+D8NeEj6XFqT3GlfxFbvvXs12Dm/wDF8MOVDFxdJGEgFw7HlfoD3u22xuL9BwoxGGmeZmGHiM5x4h4maW+C7HjLaFnl5q92BvfFIyTA7SBjnuRsjXtpjw8mmN7U0gAHnobNprSTPlY3d/a8M22JZY3jhy4dtE+HxARmjfUUQuhhq4Nu6RDjwy9M74701u2j9aW4bz7yvwkRjifUkoIH5W8i8dndAf8ARWk+avxf821jN795HnFRRYY2+CWYihmzTPlcA0NI1ptD1cVtmyt1BDBJPialxUgJe9/iyFwoNbfKr5j9qWqbix4fCRnaeLcM2rcPHVvPd7WnmTyB5DU9Qq+0tq4/aIzCGVmDJAqLKHSDMG057iLu600B6FQpL/alv1BhcRK6PBRcbFOdmney3MY1o18ROQEkCyOx1srXG7i7QLGvGHPivw5mhzarVwJFX09F0DDTzwQugwuyjEzK7M+SVg+6fE4iy4/NZT/y/NN48Vi5Q7ozDPMEbPIc3P8AVyYeuuKbUEWYcFj2x65HSG3SUT4jXhHoOXKydVZK72ptCTESGaQ248gBTWgcmtb91oGgCtFDIREQEREGS2QyAkjEB7WEgcaMWYibrMw6Oaewo6aHob/b2yI8I9hbioMUNCGNL9WnxeMN0aDppnvVY/Ye134aTO1rXtIyyxPFslZ1a4H9D0KutsbQhN/RoGQskuwXcWQDUEZj9gHsP2UJ+Yw8r8xLtBZJoAAC+wGgHkoIilDN7vYjCl7I8VC5zcwp0Rp5vTK9v3m68xTh3PJd03bwMIZmh4zRye2SN8Qe78fDexoDu7mAAnna+e9mYrhyBxZG8ci2VtsIPetR6ggrum6e3Y2xthdhJ8OCA5paJcTAQRoY5mZgG+wVO2vjv1tYhC94Q7KYeO6ZgsvZ0IcIdl7wx2Us4XmcJ7GPMq9ypxAnECexhlTKvc4TMO6exjnPxn2TCcM3FnK2VjmsaeRka6/B5kfaHYBy4uu4/GXZjpcE2ZmvAfmeB+Bwyl1eRy/Ikrhy24uxzeSf6ERFZmrYXEvjcHxvcxw5OY4tI9CNV2H4a79nEn6JinDjf2T6riCtWurTOK59fXnxhZfdbCPlxLBEakYHyx+bommQD5ltfNRYtz1ZX0ZtPZ0eIifBK3Mx4LT3FirB6HzWp7qbjYTBu+k26STM8Rl9UzK5zbDQPtUOZ+VLcXYkZWuH3gCPQi7WqbsQT/W4id+biuuFt6MhBcW6cgTmJPyVeZa6LJsZrb5HDjcOuIwov/32KtsMfVE95cQfeeRYjeGQtjYR/wCown/2Y1d7O2gyPDhzj1kodSTI86J1zZ+E/wDTB/ELE4iF8RYc0MhibIy9Y3snY9soHY/ZPyWr76bJOKYZuczRYP4mj7v+n/dZLe7GvfFJLVuuMsbr0kaWtHz/AHU8Dn4beL9ugX1yzHUgenL5LfnjJlT6zbHH2uIIINEagjQg9wqmKxL5HF8ji5x5kmyrjbkIZiJWDkHur3Vis3LfnxtW7GwePWInJMbdGgn7Qb59GBbnHv1hHMGHLspD4g12QtYWtlZfLRoABPQaLmkm2pTGYQaYQxtD8DARlHkSST3WNU78X98mR9HbQlaYJHtILTG4hwIIILTqD2Vhjd5oWOytBf3Lar5E8/kuK7P3gnhjdh2vJid9qMnT5dv5rZMJtuF4vOGHqHkA+/VW5y/rXjuX9YjfV8fHMbCxzm2HuiGWFnaGForwM/FzcST666iKkc1EREBERBtG5k0FvZI0OcR/y3NLxiWGhwmtAJbODqxw6kgrHby7LfBKS6HgteSWRZi8sHRrnEnxUQSCb1HJYpjiCCDRGoI0IPdXe1dqzYl4knkdI4NDQXVo0chp/RJtR/U78WSIilCthGOc9rWfaJAbXPNelV1td5+HsrhEYJIDE8VJ4dYJWu/tISLY29CWt0s3QtcBaa1HyXYdwviSx4bhca4NeNGTnRr+wkP3Xfm5HrR55+WXPjXxWS/XSqSlTdiowMxe2u9ilY4jb8DeRLj+UfzOi5px3fyOpkqSlrOJ3ledI2BvmfEf5AfqqDN4JupBHpX6hbT/AI/dS2wqk+do636LBQ7ZY77VtPnqPdXzHgiwQR3BtXngz9VtXRxXkptxI6iv1VosVvLt6LBQmaTU8o2Dm93Ydh3PRWvi5V9sYz4q7ytw+G+jMoyYgOafyRcnOrufsj5nouLYjByMax72FrZAXRkig5oNWPKwuh7F3blxsp2ltI5Y3EFkZ0Lm/dFc2xjtzPzs1/isY5sPFIznC7L9mgI3CqHkC1unmp549Z8Y9S9f6attDcTFshjxUbeNFJGyXMzmzO0OyuYTfXmLWGg2JiXmmwSfNpaPd1BdS2RjnyYTDtc7wtija0DQeFoF+Z0Vdac8XPq88Mv1yDaOBfBIYn1mFXWo1AOh+az/AMNZsmPjkIsNbJfoWFv81X+ImFp8cw+8Cw/4TY/c+y17Z+Kkw0jZQKJaSL5Oa4EX/XUKtn3GNnr07Ri8PLPhIH4eUNmiEUjNfC7KzKY3190gkUsrsQ/8NCT/AHUZP+QFcHl3gxBjZFxHAMvVpIc7tmcOdLL7C3ylj+rnc+RmgBzElgAoANJoj2UzF53NdL3q2k3hhrPERLhzfQZZ4z8+SwcWOphs27NKAO31j/YK3x+0Y5IWvjeHAviIrykadR09CrDDnxSA/jLv8wDr9yfZaSZW0zfintXGzZoxeaNz4w8ULaRI1wI9iFtEcgcLBsLWMadY293j/pa538go4vbjMOftW78A1v8Ai7Kfw2S21qu8w/4qb+MrFq52jizNI+Uii4k0OitlhXJf0RERAiIgIiICIiAiIgIiICKqyGwXWNBZsgHnWg6lV4NnPewyNF1encDnXerHv5IYs1m92Znl/Ca2N4OvClAp5H4XEHK6veljPojg4McMpPLNoPf/AEQNMbtdC1w1B1aQbsC/JSmfHVNlStLC1sXCyOLXR00ZXUHaZdDoRqr1c72dvHkOd32gRyF5m5WtIr/AOvQdBRyGJ35F/VxGumZwH7ArSdx08+XnPrdEXOn754izlDBd9Ca9ysditv4mT7Uz67NOQezaT3hfPHTsXj4otZJGt/iIB+Q5lYc78YdjvAZD+ZraH6kH9FzcleKt7rO+a/x1kb8xSANExB7EcM/M6D9Vrm9Z4smHlPIPawgnMCC4G/0K0lVGTuGgcaBBAvSxyNKPb4i+XZljpc+Je/7bifUrFbwC8PINeQNDycCsLhd6HjSRgd5jwn25Kji95JXZmhrQ02KqzR01J0/RXvUxpfJzY2ndjaLhh4w4AgAgdDQcQFno8aw9a9dP15LlsO15WtDARQFDRW+Lxj5Db3E9uw9Ao9/is82TG7b/AE0ZhazO3OHghoNmqIJochy5rSp8W57GRu5RghmnQuLjZ66lW6Klusuuva6IiKFVfC4t8ZtprUEjoaNix6rLxbyODs7owSW5TRIujYPXu73WBRTLYmdWfjK7Q27JIRXgq6yk3qKOqxZK8RLdLbf0REUIEREBERB7S8Vd7x059yqTWoIoqr46F9f5LyFtnnQ6lBTRV+Fm8QGnWuvcgLx8DhqNR0IQUq6o0K5icDz0d+/qF7JADy0P6f8AZBRjis5eR81cRxSN+y+vRxCgxpFA/wCFw6evkr1ExZSRSHmSa5W6691SOHd2WSRDGLMTux9lEtPZZZEMYhFl0pDGIRZegvCwdh7IYxKLKGJv4R7KD8M09KQxjkWTELR0ChMdKaB+nJELANPZe8M9j7Ku2XTKOVa9/VePeSAOoOh8kFERk8gV7wndj7KbJK5H/cq4GJ5CvUnT5oLPKeVFMh7FXYOpcT05eSpvIJQURE7sUMZ7KuJq6adulfyVOR41H9d0EeC7snAd2XnFPdeB57lB44VoV4vXOvUrxBUbFd9x0XkbLNXXZI310v3UgQTroPIIAh59KOo7DuolmpA1pVZpPOzysdR2ISKMVrf+W0EuHQ1PsoOhrlqouceZQvI5/JBPEch/pShh2gnVSmfYCpxfyQZJpCi86aKhAw1Z69FHI4km6A/rkiUcjibr3SRh6FVpI9NDrfvoFQdG4adv2RC4hJVwrPDyWrsImPURESIiICIotkB0BHugkovlAoE81JUp3Cuh9UQ8knI6d/2sKP0ny0096VqX9j8v91DMiGQE4IVvO8dDqrcO7LwlB6XIXKKIPVJj6UEQVHP7KOZRRBJzlFEQEREBERAXoK8RBUYbNn19fJXMZdXgojseY8lZL0FBft18I/xHz8l5Lhxl9NbREStZBQrzUsGPF8iiIhVnuwQqzm6Zrr5A/siIla8U3Xb9Fdx3+Ee+v6hERC2Bp1cleNRETHqIiJEREFljZdcvbn6q1REVVHTuIolQtEQLXiIg9XiIgIiICIiD2kIREHiIiAiIgIiICIiAiIg//9k=")
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            background-color: #f2f2f2;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: azure;
+        }
+        h2 {
+            color: azure;
+        }
+        ol {
+            color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Página de Prueba</h1>
+    <h2>Animales:</h2>
+    <table>
+        <thead> 
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Peso</th>
+                <th>Jaula</th>
+                <th>Dieta</th>
+                <th>Veterinario</th>
+            </tr>
+        </thead>
+        <tbody> 
+            {% for animal in animales %}
+            <tr>
+                <td>{{ animal.id }}</td>
+                <td>{{ animal.nombre }}</td>
+                <td>{{ animal.edad }}</td>
+                <td>{{ animal.peso }} kg</td>
+                <td>{{ animal.jaula.numero }}</td>
+                <td>{{ animal.tipo_dieta }}</td> 
+                <td>{{ animal.veterinario.nombre }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h2>Veterinarios:</h2>
+    <table>
+        <thead> 
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Identificacion</th>
+                <th>Salario</th>
+                <th>Zona</th>
+                <th>Animales</th>
+            </tr>
+        </thead>
+        <tbody> 
+            {% for veterinario in veterinarios %}
+            <tr>
+                <td>{{ veterinario.id }}</td>
+                <td>{{ veterinario.nombre }}</td>
+                <td>{{ veterinario.edad }}</td>
+                <td>{{ veterinario.identificacion }}</td>
+                <td>{{ veterinario.salario }}</td>
+                <td>{{ veterinario.zona }}</td>
+                <td>
+                    <ul>
+                    {% for animal in veterinario.animales.all %}
+                    <li> {{ animal.nombre }} </li>
+                    {% empty %}
+                    <li> No hay animales bajo su cuidado. </li>
+                    {% endfor %}
+                </ul>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

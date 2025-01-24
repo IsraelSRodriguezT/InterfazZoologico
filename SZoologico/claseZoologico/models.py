@@ -1,10 +1,7 @@
 from django.db import models
 from datetime import datetime,date
 from enum import Enum
-
 from django.db.models import PositiveIntegerField
-
-
 # Create your models here.
 # Enumeradores:
 class Estado(Enum):
@@ -206,7 +203,7 @@ class Boleto(models.Model):
     # Atributos:
     fecha_visita = models.DateField(auto_now=True, verbose_name='Fecha de visita')
     numero = models.CharField(max_length=7, unique=True, editable=False)
-    valor = 2.5
+    valor = models.FloatField(editable=False,default=2.5)
     # Asociacion:
     cliente = models.OneToOneField(Cliente, on_delete=models.CASCADE, related_name='boleto', null=True)
     compra = models.ForeignKey('Compra', on_delete=models.CASCADE, related_name='boletos', null=True)
@@ -239,7 +236,7 @@ class Compra(models.Model):
     # Metodos:
     def calcular_total(self):
         total = 0
-        boletos = Boleto.objects.filter(compras=self)
+        boletos = Boleto.objects.filter(compra=self)
         for boleto in boletos:
             total += boleto.calcular_valor()
         return total

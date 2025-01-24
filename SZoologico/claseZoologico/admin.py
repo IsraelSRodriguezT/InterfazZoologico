@@ -13,12 +13,15 @@ class JaulaAdmin(admin.ModelAdmin):
     search_fields = ('numero',)
 admin.site.register(Jaula,JaulaAdmin)
 class BoletoAdmin(admin.ModelAdmin):
-    list_display = ('numero','fecha_visita','cliente','compra')
-    list_filter = ('fecha_visita','cliente','compra')
+    list_display = ('numero','fecha_visita','cliente','valor','compra')
+    list_filter = ('fecha_visita','cliente','valor','compra')
     search_fields = ('numero',)
 admin.site.register(Boleto,BoletoAdmin)
 class CompraAdmin(admin.ModelAdmin):
-    list_display = ('id',)
+    list_display = ('compra_id','calcular_total',)
+    def compra_id(self, obj):
+        return obj.id
+    compra_id.short_description = "Compra"
     search_fields = ('id',)
 admin.site.register(Compra,CompraAdmin)
 class ClienteAdmin(admin.ModelAdmin):
